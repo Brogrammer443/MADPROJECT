@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bus">
+    <TextView
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#27B0A0"
+        android:text="Reserve Bus Ticket"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/BackBtn"
+        android:paddingLeft="05dp"
+        android:drawableLeft="@drawable/back"
+        android:background="@color/white"
+        android:layout_alignParentLeft="true"
+        />
+
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_below="@id/bar"
+        android:hint="Enter your name"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/userPhone"
+        android:layout_below="@id/userName"
+        android:hint="Enter your phone number"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_below="@id/userPhone"
+        android:hint="Enter your email"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:hint="Select Departure City"
+        android:layout_below="@+id/userEmail"
+        android:id="@+id/layout1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/DCityMenu"
+            android:inputType="none"
+            ></AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:hint="Select Arrival City"
+        android:layout_below="@+id/layout1"
+        android:id="@+id/layout2"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ACityMenu"
+            android:inputType="none"
+            ></AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:hint="Select Bus"
+        android:layout_below="@+id/layout2"
+        android:id="@+id/layout3"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/BusMenu"
+            android:inputType="none"
+            ></AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ReserveBtn"
+        android:text="Reserve Ticket"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/layout3"
+        android:layout_marginTop="16dp"
+        />
+</RelativeLayout>

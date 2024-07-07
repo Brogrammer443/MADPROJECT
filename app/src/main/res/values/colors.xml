@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#220303</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white1">#ccc</color>
+
+    <color name="bkgclr">#f0f0f0</color>
+    <color name="tlclr">#B12A2A</color>
+    <color name="txclr">#666</color>
+    <color name="btnclr">#fff</color>
+    <color name="title_color">#333</color>
+    <color name="text_color">#666</color>
+    <color name="button_text_color">#fff</color>
+    <color name="background_start_color">#3E59EF</color>
+    <color name="background_end_color">#8BC34A</color>
+        <color name="primaryColor">#27B0A0</color>
+        <color name="background_color">#F0F0F0</color>
+        <color name="textColor">#101010</color>
+        <color name="hintColor">#888888</color>
+    <color name="light_gray">#D3D3D3</color>
+
+
+
+</resources>

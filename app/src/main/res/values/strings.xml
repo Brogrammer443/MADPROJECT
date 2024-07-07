@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SampleProject</string>
+    <string name="green">green</string>
+    <string name="reserve_ticket">Reserve Ticket</string>
+    <string name="reserve_movie_ticket">Reserve Movie Ticket</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="select_movie">Select Movie</string>
+    <string name="select_seat_no">Select Seat No</string>
+    <string name="reserve_tickets">Reserve Tickets</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+</resources>

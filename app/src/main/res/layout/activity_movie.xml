@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Movie">
+
+    <TextView
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reserve_movie_ticket"
+        android:textAlignment="center"
+        android:textColor="@color/white1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:layout_marginLeft="45dp"
+        android:elevation="4dp" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/BackBtn"
+        android:paddingLeft="05dp"
+        android:drawableLeft="@drawable/back"
+        android:background="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_below="@id/bar"
+        android:hint="@string/enter_your_name"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@color/textColor" />
+
+    <EditText
+        android:id="@+id/userPhone"
+        android:layout_below="@id/userName"
+        android:hint="@string/enter_your_phone_number"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@color/textColor" />
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_below="@id/userPhone"
+        android:hint="@string/enter_your_email"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@color/textColor" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:layout_below="@id/userEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:hint="@string/select_movie"
+        android:id="@+id/layout1">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MovieMenu"
+            android:inputType="none"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/textColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:layout_below="@id/layout1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:hint="@string/select_seat_no"
+        android:id="@+id/layout2">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Seat"
+            android:inputType="none"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/textColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ReserveBtn"
+        android:text="@string/reserve_tickets"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/layout2"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:elevation="4dp" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/ReserveBtn"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
