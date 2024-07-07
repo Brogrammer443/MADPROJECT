@@ -20,7 +20,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import org.checkerframework.checker.nullness.qual.NonNull;
+import androidx.annotation.NonNull;
+
 
 public class Movie extends AppCompatActivity {
     String[] SeatNo = {
